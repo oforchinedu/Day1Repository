@@ -34,6 +34,11 @@ describe("tests for Account transactions", function(){
 	      expect(a.balance).toEqual(500);
 	    });
 
+	    it("The class should return a balance of 3000 for a deposit of 500", function() {
+	      var a = new Account('a', 3000);
+	      expect(a.balance).toEqual(3000);
+	    });
+
 	    it("The class should return a balance of 5000 for a deposit of 500", function() {
 	      var a = new Account('a', 5000);
 	      expect(a.balance).toEqual(5000);
@@ -48,7 +53,7 @@ describe("tests for Account transactions", function(){
 	      var a = new Account('a', 0);
 	      expect(a._isPositive(-1000)).toEqual(false);
 	    });
-	    
+
 	    it("The class should return fasle for a negative value  of deposit", function() {
 	      var a = new Account('a', 0);
 	      expect(a._isPositive(-20)).toEqual(false);
