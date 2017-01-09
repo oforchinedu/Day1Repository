@@ -43,6 +43,16 @@ describe("tests for Account transactions", function(){
 	      var a = new Account('a', 0);
 	      expect(a._isPositive(-1)).toEqual(false);
 	    });
+
+	    it("The class should return fasle for a negative value  of deposit", function() {
+	      var a = new Account('a', 0);
+	      expect(a._isPositive(-1000)).toEqual(false);
+	    });
+	    
+	    it("The class should return fasle for a negative value  of deposit", function() {
+	      var a = new Account('a', 0);
+	      expect(a._isPositive(-20)).toEqual(false);
+	    });
 	});
 
 
