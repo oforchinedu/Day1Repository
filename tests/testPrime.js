@@ -15,4 +15,18 @@ describe("Prime list tests ", function(){
 
 	})
 
+	describe("Case for the number 2", function(){
+
+		it("it should return 2 for 2", function(){
+			expect(primeList(2)).toEqual([2]);
+		})
+	})
+
+	describe("Case for values more than number 2", function(){
+
+		it("it should return [2,3,5,7] ", function(){
+			expect(primeList(7)).toEqual([2,3,5,7]);
+		})
+	})
+
 })
