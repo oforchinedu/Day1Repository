@@ -1,6 +1,6 @@
 'use strict'
 
-var primeList = require('../app/testPrime.js').primeList
+var primeList = require('../app/primeList.js').primeList
 
 describe("Prime list tests ", function(){
 	describe("Case for values less than two", function(){
@@ -14,14 +14,5 @@ describe("Prime list tests ", function(){
 		})
 
 	})
-
-
-
-
-
-
-
-
-
 
 })
