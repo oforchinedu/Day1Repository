@@ -1,6 +1,3 @@
-
-'use strict'
-
 var Account = require('../app/account.js').Account
 
 
